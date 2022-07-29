@@ -1,0 +1,63 @@
+/* Awesome-Project */
+
+.main__awesome-project {
+
+}
+.awesome-project {
+}
+
+.awesome-project__container {
+}
+
+.awesome-project__content {
+   border-top: 1px solid rgba(33, 56, 66, 0.0955529);
+   padding: 110px 0 60px 0;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   box-sizing: content-box;
+}
+.block-text__title_awesome {
+   flex: 0 1 38.5%;
+   margin: 0 119px 0 0;
+}
+.block-text__text_awesome {
+   flex: 0 1 61.5%;
+   margin: 0 133px 0 0;
+}
+
+
+/* Media */
+
+@media (max-width: 992px) {
+   .block-text__title_awesome {
+      margin: 0 80px 0 0;
+      flex: 0 1 45%;
+   }
+   .block-text__text_awesome {
+      flex: 0 1 55%;
+      margin: 0 50px 0 0;
+   }
+}
+@media (max-width: 768px) {
+   .block-text__title_awesome {
+      margin: 0 50px 0 0;
+   }
+   .block-text__text_awesome {
+      margin: 0 0 0 0;
+   }
+}
+@media (max-width: 480px) {
+   .awesome-project__content {
+      flex-wrap: wrap;
+   }
+   .block-text__title_awesome {
+      margin: 0 0 24px 0;
+      flex: 1 1 100%;
+   }
+   .block-text__text_awesome {
+      flex: 1 1 100%;
+      margin: 0;
+   }
+}
+

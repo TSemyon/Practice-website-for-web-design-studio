@@ -1,0 +1,131 @@
+/* Project */
+
+.project {
+   overflow: hidden;
+   padding: 0 0 195px 0;
+}
+.project_reverse {
+   overflow: hidden;
+   padding: 0 0 195px 0;
+}
+.project__content {
+   flex: 0 0 100%;
+   display: flex;
+}
+.project__container {
+   display: flex;
+   align-items: center;
+}
+.project__container_reverse {
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+}
+.project__body_reverse {
+   min-height: 100%;
+   padding: 80px 0px 82px 115px;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: center;
+}
+.project__body {
+   min-height: 100%;
+   padding: 80px 115px 82px 0px;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: center;
+}
+.block-text__link {
+   font-weight: 700;
+   font-style: inherit;
+   text-decoration: none;
+   color: #D4D6D4;
+}
+.block-text__link:hover {
+   color: #FFD723;
+   text-decoration: underline;
+}
+.project__image {  
+
+}
+.project__image img {
+   width: 100%;
+}
+
+/* Media */
+@media (min-width: 1110px) {
+   .project__image  {
+      flex: 0 0 calc(50vw - (0.48 - 0.5) * (1110px));
+   }
+}
+@media (max-width: 982px) {
+   .project__body_reverse {
+      padding: 80px 0px 82px 80px;
+   }
+   .project__body {
+      padding: 80px 80px 82px 0px;
+   }
+}
+@media (min-width: 767px) {
+   .project {
+      display: flex;
+   }
+   .project_reverse {
+      display: flex;
+      flex-direction: row-reverse;
+   }
+   .project__body {
+      width: 48%;
+   }
+   .project__body_reverse {
+      width: 48%;
+   }
+   .project__image {
+      position: relative;
+      flex: 0 0 calc(((100vw - 30px) * 0.5) + 15px);
+      padding: 0 0 38.2% 0;
+      transform: translateX(-100%);
+   }
+   .image_reverse {
+      transform: translateX(100%);
+   }
+   .project__image img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      object-fit: cover;
+   }
+}
+@media (max-width: 767px) {
+   .project {
+      padding: 0 0 80px 0;
+   }
+   .project_reverse {
+      padding: 0 0 80px 0;
+   }
+   .project__container_reverse {
+      justify-content: flex-start;
+   }
+   .project__body_reverse {
+      padding: 80px 0px 30px 0px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+   }
+   .project__body {
+      padding: 80px 0px 30px 0px;
+      display: flex;
+   }
+}
+@media (max-width: 576px) {
+   .project__body_reverse {
+      padding: 40px 0px 30px 0px;
+   }
+   .project__body {
+      padding: 40px 0px 30px 0px;
+   }
+}

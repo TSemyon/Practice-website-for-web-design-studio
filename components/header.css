@@ -1,0 +1,33 @@
+/* Header */
+
+.header {
+   position: absolute;
+   width: 100%;
+   left: 0;
+   top: 0;
+   z-index: 200;
+}
+.header__container {
+   min-height: 90px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+._container {
+}
+.header__burger {
+
+}
+.budger {
+   background-color:#fff;
+   border-radius: 50%;
+   height: 40px;
+   width: 40px;
+}
+.burger__items {
+  
+}
+.burger__item {
+}
+
+

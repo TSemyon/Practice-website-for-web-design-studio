@@ -1,0 +1,120 @@
+/* Strategy */
+
+.main__strategy {
+ 
+}
+.strategy {
+   padding: 120px 0px 150px 0px;
+}
+.strategy__container {
+}
+._container {
+}
+.strategy__content {
+   display: flex;
+}
+.strategy__text-block {
+   flex: 0 1 50%;
+}
+.block-text {
+
+}
+.block-text__subtitle {
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 1.5;
+   color: rgba(77, 83, 60, 0.9);
+   margin: 0 0  30px 0;
+}
+.item__link {
+}
+.strategy__card {
+   flex: 0 1 50%;
+   background: #FFFFFF;
+   box-shadow: 0px 100px 100px rgba(0, 0, 0, 0.145947);
+   margin: -120px 0 0 160px;
+}
+.card__content {
+   min-height: 100%;
+   padding: 120px 8px 60px 40px;
+   display: flex;
+   flex-direction: column;
+}
+.card__text {
+   flex: 1 1 auto;
+   font-style: italic;
+   font-size: 24px;
+   line-height: 1.67;
+   color: #4D533C;
+   margin: 0 0 50px 0;
+}
+.card__body {
+   display: flex;
+   align-items: center;
+}
+.card__photo {
+   border-radius: 50%;
+   box-shadow: 20px 25px 43px rgba(0, 0, 0, 0.18);
+   margin: 0 20px 0 0;
+}
+.card__name {
+   font-weight: 700;
+   font-size: 22px;
+   line-height: 1.5;
+   color: #4D533C;
+}
+.card__pos {
+   color: #152934;
+}
+
+/* Media */
+
+@media (max-width: 992px) {
+   .strategy__card {
+      margin: -120px 0 0 100px;
+   }
+}
+@media (max-width: 768px) {
+   .strategy__content {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row-reverse;
+   }
+   .strategy {
+      padding: 60px 0px 120px 0px;
+   }
+   .strategy__text-block {
+      flex: 1 1 100%;
+      margin: 0 0 40px 0;
+   }
+   .strategy__card {
+      margin: 0;
+      flex: 0 1 70%;
+      margin: 0 -15px 0 0;
+      box-sizing: content-box;
+      box-shadow: 0px 50px 50px rgba(0, 0, 0, 0.145947);
+   }
+   .card__text {
+      font-size: 20px;
+   }
+   .card__content {
+      padding: 60px 8px 30px 40px;
+   }
+}
+@media (max-width: 599px) {
+   .card__text {
+      font-size: 19px;
+   }
+   .card__name {
+      font-size: 18px;
+   }
+   .card__pos {
+      font-size: 15px;
+   }
+}
+@media (max-width: 520px) {
+   .strategy__card {
+      flex: 1 1 100%;
+      margin: 0 -15px;
+   }
+}
